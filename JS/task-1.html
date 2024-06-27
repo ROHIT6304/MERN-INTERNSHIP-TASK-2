@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+<body>
+    <p>Example x = 32243; </p>
+    <p id="demo">Expected output:</p>
+    <button onclick="result()">calc</button>
+    <script>
+        function num(x){
+            let num;
+            let revnum = 0;
+            while(x!=0){
+                num = x % 10;
+                revnum = revnum * 10 + num;
+                x = Math.floor(x / 10);
+            }
+            return revnum;
+        }
+        function result(){
+            const x = 32243; 
+            const result= num(x);
+            document.getElementById("demo").innerHTML += " " + result;
+        }
+    </script>
+</body>
+</html>

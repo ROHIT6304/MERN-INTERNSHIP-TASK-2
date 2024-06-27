@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-2</title>
+</head>
+<body>
+    <p>Example string: "webmaster"</p>
+    <p id="demo">Expected output:</p>
+    <button onclick="result()">Sort</button>
+    <script>
+        function sortString(str){
+            return str.split('').sort().join('');
+        }
+        function result(){
+            const str = "webmaster";
+            const sortedStr = sortString(str);
+            document.getElementById("demo").innerHTML += " " + sortedStr;
+        }
+    </script>
+</body>
+</html>
